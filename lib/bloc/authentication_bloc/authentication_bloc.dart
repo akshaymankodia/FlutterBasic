@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'package:basic_app/repositories/firebase_auth_repository.dart';
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
+// import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
-part 'authentication_event.dart';
-part 'authentication_state.dart';
+
+import 'authentication_bloc_barrel.dart';
+// part 'authentication_event.dart';
+// part 'authentication_state.dart';
 
 class AuthenticationBloc extends Bloc<AuthenticationBlocEvent, AuthenticationBlocState> {
   final FirebaseAuthRepository _firebaseAuthRepository;
